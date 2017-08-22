@@ -1,9 +1,10 @@
 package com.yoparty.bean;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserPartnerExample {
+public class UserPartnerExample implements Serializable {
     protected String orderByClause;
 
     protected boolean distinct;
@@ -63,7 +64,7 @@ public class UserPartnerExample {
         distinct = false;
     }
 
-    protected abstract static class GeneratedCriteria {
+    protected abstract static class GeneratedCriteria implements Serializable {
         protected List<Criterion> criteria;
 
         protected GeneratedCriteria() {
@@ -292,7 +293,7 @@ public class UserPartnerExample {
         }
     }
 
-    public static class Criterion {
+    public static class Criterion implements Serializable {
         private String condition;
 
         private Object value;

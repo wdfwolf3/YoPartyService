@@ -1,9 +1,10 @@
 package com.yoparty.bean;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserRoleExample {
+public class UserRoleExample implements Serializable {
     protected String orderByClause;
 
     protected boolean distinct;
@@ -63,7 +64,7 @@ public class UserRoleExample {
         distinct = false;
     }
 
-    protected abstract static class GeneratedCriteria {
+    protected abstract static class GeneratedCriteria implements Serializable {
         protected List<Criterion> criteria;
 
         protected GeneratedCriteria() {
@@ -302,7 +303,7 @@ public class UserRoleExample {
         }
     }
 
-    public static class Criterion {
+    public static class Criterion implements Serializable {
         private String condition;
 
         private Object value;

@@ -1,11 +1,12 @@
 package com.yoparty.bean;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
-public class SignupUserExample {
+public class SignupUserExample implements Serializable {
     protected String orderByClause;
 
     protected boolean distinct;
@@ -65,7 +66,7 @@ public class SignupUserExample {
         distinct = false;
     }
 
-    protected abstract static class GeneratedCriteria {
+    protected abstract static class GeneratedCriteria implements Serializable {
         protected List<Criterion> criteria;
 
         protected GeneratedCriteria() {
@@ -880,7 +881,7 @@ public class SignupUserExample {
         }
     }
 
-    public static class Criterion {
+    public static class Criterion implements Serializable {
         private String condition;
 
         private Object value;
